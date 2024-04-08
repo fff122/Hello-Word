@@ -32,11 +32,10 @@ code_templates = {
     '.nim': 'echo "Hello, World!"'
 }
 
-# 遍历字典中的每个文件扩展名和对应的打印语句
+
 for extension, code in code_templates.items():
-    # 创建文件名
     filename = f"hello_world{extension}"
-    # 打开文件并写入对应的代码
+
     with open(filename, 'w') as file:
         file.write(code)
     print(f"File '{filename}' has been created with the corresponding 'Hello, World!' code snippet.")
